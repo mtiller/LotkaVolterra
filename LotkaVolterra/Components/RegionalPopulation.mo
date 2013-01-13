@@ -1,6 +1,7 @@
 within LotkaVolterra.Components;
 model RegionalPopulation "A localized population of animals"
-  extends Interfaces.SinkOrSource;
+  Interfaces.Population pop
+    annotation (Placement(transformation(extent={{-10,90},{10,110}})));
   parameter Boolean steady_state;
   parameter Real initial_population annotation(Dialog(enable=not steady_state));
 protected

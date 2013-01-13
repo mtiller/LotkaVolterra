@@ -5,5 +5,5 @@ model Starvation "Starvation model"
   parameter Real gamma "Starvation coefficient";
 equation
   // Rate of starvation is proportional to population
-  pop.rate = gamma*pop.population;
+  decline = gamma*pop.population;
 end Starvation;

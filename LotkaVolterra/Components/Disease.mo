@@ -5,5 +5,5 @@ model Disease "Non-linear disease model"
   parameter Real zeta "Disease coefficient";
 equation
   // Rate of starvation is proportional to population
-  pop.rate = zeta*pop.population*pop.population;
+  decline = zeta*pop.population*pop.population;
 end Disease;

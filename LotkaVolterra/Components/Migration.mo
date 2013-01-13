@@ -6,12 +6,13 @@ model Migration "Simple proportional migration model"
 protected
   Real migration_rate "Departure rate (immediate) from region a to region b";
 equation
-  migration_rate = if initial() and not initially then
-    0
+  if initial() and not initially then
+    migration_rate = 0;
  else
-     mu*(pop_a.population-pop_b.population);
-  pop_a.rate =  migration_rate;
-  pop_a.rate + pop_b.rate = 0 "Assume nobody dies during migration";
+    migration_rate = mu*(pop_a.population-pop_b.population);
+  end if;
+  a_decline = migration_rate;
+  b_growth = migration_rate;
   annotation (Diagram(graphics), Icon(graphics={
         Polygon(
           points={{-72,26},{-70,34},{-62,38},{-50,38},{-42,34},{-44,28},{-42,22},

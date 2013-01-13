@@ -4,8 +4,8 @@ model Predation "Model of predation"
   parameter Real beta "Prey consumed";
   parameter Real delta "Predators fed";
 equation
-  pop_a.rate = beta*pop_a.population*pop_b.population;
-  pop_b.rate = -delta*pop_a.population*pop_b.population;
+  b_growth = delta*pop_a.population*pop_b.population;
+  a_decline = beta*pop_a.population*pop_b.population;
   annotation (Icon(graphics={
         Rectangle(
           extent={{-100,100},{100,-100}},

@@ -60,5 +60,5 @@ model Reproduction "Model of reproduction"
           lineColor={0,0,0},
           textString="%name")}));
 equation
-  pop.rate = -alpha*pop.population;
+  growth = alpha*pop.population;
 end Reproduction;
