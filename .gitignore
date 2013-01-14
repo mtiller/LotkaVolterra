@@ -1,0 +1,6 @@
+*.mat
+*.txt
+*.exe
+*.lib
+*.exp
+*.c
