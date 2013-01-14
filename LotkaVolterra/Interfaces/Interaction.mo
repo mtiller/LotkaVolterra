@@ -1,5 +1,5 @@
 within LotkaVolterra.Interfaces;
-model Interaction "Modeling interaction between two populations"
+partial model Interaction "Modeling interaction between two populations"
 
   Population pop_a
     annotation (Placement(transformation(extent={{-110,-10},{-90,10}})));

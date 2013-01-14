@@ -1,8 +1,11 @@
 ClassicModel
 QuiscentClassicalModel
 ComponentOriented
+ComponentOrientedArchitecture
 TwoPrey
 ThreeTier
 ThreeTierOmnivores
 ThreeTierWithDisease
 MultipleRegions
+MultipleRegionsWithModelParameters
+MultipleRegionVariant
