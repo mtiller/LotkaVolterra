@@ -1,7 +1,7 @@
 LotkaVolterra
 =============
 
-This library is a complement to [a blog post](http://blog.xogeny.com/blog/eqs-to-comps)
+This library is a complement to [a blog post](http://blog.xogeny.com/blog/eqs-to-comps2)
 I created exploring how to transform the LotkaVolterra equations into a library of component
 models for various ecological effects.
 
