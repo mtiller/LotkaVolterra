@@ -2,6 +2,8 @@ within LotkaVolterra.Components;
 model Reproduction "Model of reproduction"
   extends Interfaces.SinkOrSource;
   parameter Real alpha "Birth rate";
+equation
+  growth = alpha*pop.population;
   annotation (Icon(graphics={
         Rectangle(
           extent={{-100,100},{100,-100}},
@@ -59,6 +61,4 @@ model Reproduction "Model of reproduction"
           extent={{-100,-120},{100,-120}},
           lineColor={0,0,0},
           textString="%name")}));
-equation
-  growth = alpha*pop.population;
 end Reproduction;

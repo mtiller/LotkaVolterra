@@ -5,7 +5,6 @@ partial model Interaction "Modeling interaction between two populations"
     annotation (Placement(transformation(extent={{-110,-10},{-90,10}})));
   Population pop_b
     annotation (Placement(transformation(extent={{90,-10},{110,10}})));
-  annotation (Icon(graphics), Diagram(graphics));
 protected
   Real a_growth "Growth in population a that results from this interaction";
   Real a_decline "Decline in population a that results from this interaction";
@@ -16,4 +15,5 @@ equation
   pop_a.rate = a_decline;
   b_decline = -b_growth;
   pop_b.rate = b_decline;
+  annotation (Icon(graphics), Diagram(graphics));
 end Interaction;
