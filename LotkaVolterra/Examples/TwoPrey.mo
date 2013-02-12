@@ -21,7 +21,5 @@ equation
       points={{10,20},{40,20},{40,-30}},
       color={0,255,0},
       smooth=Smooth.None));
-  annotation (Diagram(graphics),
-    experiment(StopTime=100, Tolerance=1e-008),
-    __Dymola_experimentSetupOutput);
+  annotation (experiment(StopTime=100, Tolerance=1e-008));
 end TwoPrey;
