@@ -10,6 +10,5 @@ protected
 equation
   der(x) = x*(alpha-beta*y);
   der(y) = -y*(gamma-delta*x);
-  annotation (experiment(StopTime=100, Tolerance=1e-008),
-      __Dymola_experimentSetupOutput);
+  annotation (experiment(StopTime=100, Tolerance=1e-008));
 end ClassicModel;

@@ -10,5 +10,4 @@ protected
 equation
   decline = -growth;
   pop.rate = decline;
-  annotation (Icon(graphics));
 end SinkOrSource;

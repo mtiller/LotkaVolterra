@@ -15,7 +15,7 @@ initial equation
 equation
   der(population) = pop.rate;
   assert(population>=0, "Population went negative!");
-  annotation (Diagram(graphics), Icon(graphics={
+  annotation ( Icon(graphics={
         Rectangle(
           extent={{-100,100},{100,-100}},
           lineColor={0,0,0},

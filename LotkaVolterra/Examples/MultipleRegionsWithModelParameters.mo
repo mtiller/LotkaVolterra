@@ -109,7 +109,5 @@ equation
       points={{-80,10},{-80,50},{-26,50},{-26,40}},
       color={0,0,0},
       smooth=Smooth.None));
-  annotation (Diagram(graphics),
-    experiment(StopTime=1000, Tolerance=1e-008),
-    __Dymola_experimentSetupOutput);
+  annotation (experiment(StopTime=1000, Tolerance=1e-008));
 end MultipleRegionsWithModelParameters;
