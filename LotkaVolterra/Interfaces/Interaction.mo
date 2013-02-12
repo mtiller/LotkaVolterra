@@ -15,5 +15,4 @@ equation
   pop_a.rate = a_decline;
   b_decline = -b_growth;
   pop_b.rate = b_decline;
-  annotation (Icon(graphics), Diagram(graphics));
 end Interaction;

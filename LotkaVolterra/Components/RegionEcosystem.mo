@@ -59,5 +59,5 @@ equation
         Text(
           extent={{20,-100},{160,-160}},
           lineColor={0,0,255},
-          textString="%name")}), Diagram(graphics));
+          textString="%name")}));
 end RegionEcosystem;

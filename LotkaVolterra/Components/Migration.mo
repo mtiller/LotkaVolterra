@@ -13,7 +13,7 @@ equation
   end if;
   a_decline = migration_rate;
   b_growth = migration_rate;
-  annotation (Diagram(graphics), Icon(graphics={
+  annotation ( Icon(graphics={
         Polygon(
           points={{-72,26},{-70,34},{-62,38},{-50,38},{-42,34},{-44,28},{-42,22},
               {-46,16},{-54,14},{-60,16},{-68,18},{-72,26}},

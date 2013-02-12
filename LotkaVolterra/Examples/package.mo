@@ -1,3 +1,3 @@
 within LotkaVolterra;
-package Examples 
+package Examples
 end Examples;

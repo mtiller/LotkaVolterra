@@ -1,3 +1,3 @@
 within LotkaVolterra;
-package Icons 
+package Icons
 end Icons;

@@ -8,7 +8,5 @@ equation
       points={{-70,-72},{-70,-60},{-90,-60},{-90,0},{-40,0},{-40,-30}},
       color={0,0,0},
       smooth=Smooth.None));
-  annotation (Diagram(graphics),
-    experiment(StopTime=100, Tolerance=1e-008),
-    __Dymola_experimentSetupOutput);
+  annotation (experiment(StopTime=100, Tolerance=1e-008));
 end ThreeTierWithDisease;
